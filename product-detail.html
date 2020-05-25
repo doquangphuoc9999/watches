@@ -1,0 +1,799 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link href="./css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./vender/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/owlcarousel/css/default.owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/owlcarousel/css/owl.theme.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/owlcarousel/css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/fancybox/css/jquery.fancybox-plus.css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+    <!--modal product quick view-->
+    <div class="modal fade modal-quick-view" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-7 col-lg-7 product-images">
+                                <div class="product-images">
+                                    <div id="zoom-gallery" class="gallery product-gallery">
+                                        <a class="item" href="#">
+                                            <img src="images/products/citizen02.jpg" />
+                                        </a>
+                                        <a class="item" href="#">
+                                            <img src="./images/products/citizen02.jpg" />
+                                        </a>
+                                        <a class="item" href="#">
+                                            <img src="./images/products/citizen02.jpg" />
+                                        </a>
+                                        <a class="item" href="#">
+                                            <img src="./images/products/citizen02.jpg" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 col-lg-5 product-info">
+                                <h4 class="prpduct-title">Aromatica Sea Daffodil Aqua Gel Cream</h4>
+                                <p class="product-more-info">
+                                    <span class="product-sku">
+                                    Mã sản phẩm: <span>6KS15S0022</span>
+                                    </span>
+                                </p>
+                                <div class="form-input product-price-wrapper">
+                                    <div class="product-price">
+                                        <span class="p-price ">396,000₫</span>
+                                        <del>450,000₫</del>
+                                    </div>
+                                    <em class="PriceSaving">(Bạn đã tích kiệm được 54,000₫)</em>
+                                </div>
+                                <form action="" method="post" enctype="" class="form-vertical">
+                                    <div class="qty-addcart clearfix">
+                                        <p class="quantity-selector">Số lượng</p>
+                                        <div class="qty">
+                                            <button type="button" class="icon-fallback icon-fallback-minus">
+                                            <span class="icon icon-minus" aria-hidden="true"></span>
+                                            <span class="fallback-text" aria-hidden="true">−</span>
+                                            <span class="visually-hidden">Giảm số lượng sản phẩm đi 1</span>
+                                        </button>
+                                            <input type="text" class="qty-num" name="quantity">
+                                            <button type="button" class="icon-fallback icon-fallback-plus">
+                                            <span class="icon icon-plus" aria-hidden="true"></span>
+                                            <span class="fallback-text" aria-hidden="true">+</span>
+                                            <span class="visually-hidden">Tăng số lượng sản phẩm lên 1</span>
+                                        </button>
+                                        </div>
+                                    </div>
+                                    <div class="btn-product-page">
+                                        <button type="submit" name="add" class="btn btn-add-product">Thêm vào
+                                        giỏ</button>
+                                        <button name="buy" id="buy-now" class="btn btn-add-product">Mua ngay</button>
+                                    </div>
+                                </form>
+
+                                <div class="qv-readmore">
+                                    <span> hoặc </span><a class="read-more" href="#" role="button">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-top">
+            <div class="container">
+                <div class="row top-header">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="header-top-contact">
+                            <a href="#">
+                                <i class="fa fa-phone" aria-hidden="true"></i> (+84) 379494687
+                            </a>
+                            <span class="font-line">|</span>
+                            <a href="#">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> doquangphuoc9999@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12  col-md-12 col-lg-6">
+                        <div class="header-top-account">
+                            <a href="#">
+                                <i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                                <span>Cart</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hear-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-3 logo-top">
+                        <span>The king of watches</span>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-9">
+                        <div class="menu-top">
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="./index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="no-bullets megamenu-menu">
+                                                <li class="nav-item clearfix">
+                                                    <a class="nav-link" href="./men.html">Men</a>
+                                                </li>
+                                                <li class="nav-item clearfix">
+                                                    <a class="nav-link" href="./wonmen.html">Women</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">About us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">News</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./contact.html">Contact us</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner-top">
+            <div class="banner-img" style="background-image: url('./images/slide/slider-img-nam3.jpg');">
+                <div class="content">
+                    <h2>Product detail</h2>
+                    <div class="breadcrumb-small">
+                        <a href="/">Trang chủ</a>
+                        <span aria-hidden="true">/</span>
+                        <a href="./men.html">Product</a>
+                        <span aria-hidden="true">/</span>
+                        <span>Aromatica Sea Daffodil Powder</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row product-single">
+                    <div class="col-12 col-md-12 col-lg-7">
+                        <div class="product-single-photos">
+                            <img id="zoom" src="images/product-detail/small/1.jpg" data-zoom-image="images/product-detail/large/1.jpg" data-fancybox="images" />
+                            <div id="gallery_01" class="gallery">
+                                <a href="#" data-image="images/product-detail/large/1.jpg" data-zoom-image="images/product-detail/large/1.jpg">
+                                    <img src="images/product-detail/large/1.jpg" />
+                                </a>
+                                <a href="#" data-image="images/product-detail/large/2.jpg" data-zoom-image="images/product-detail/large/2.jpg">
+                                    <img src="images/product-detail/large/2.jpg" />
+                                </a>
+                                <a href="#" data-image="images/product-detail/large/3.jpg" data-zoom-image="images/product-detail/large/3.jpg">
+                                    <img src="images/product-detail/large/3.jpg" />
+                                </a>
+                                <a href="#" data-image="images/product-detail/large/5.jpg" data-zoom-image="images/product-detail/large/5.jpg">
+                                    <img src="images/product-detail/large/5.jpg" />
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-5 product-page">
+                        <h1 class="name">Phấn phủ Laura Mercer</h1>
+                        <p class="product-more-info">
+                            <span class="product-sku">
+                                Mã sản phẩm: <span id="ProductSku" class="ProductSku" itemprop="SKU">6KS15S1022</span>
+                            </span>
+                        </p>
+                        <div class="product-info ">
+                            <div class="one-whole">
+                                <p class="line-price">
+                                    <span class="price-text">Giá: </span>
+                                    <span class="ProductPrice">396,000₫</span>
+                                    <span class="visually-hidden">Giá bán</span>
+                                    <s id="ComparePrice" class="ComparePrice"> 426,000₫</s>
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="product-single-details">
+                            <div class="product-description">
+                                <ul>
+                                    <li>Thương hiệu: <a href="#">Laura</a></li>
+                                    <li>Dòng sản phẩm: <a href="#">Phấn phủ</a></li>
+                                    <li>Giảm 10% cho hóa đơn trên 500.000 VNĐ</li>
+                                    <li>Miễn phí giao hàng trong bán kính 5km</li>
+                                    <li>Ship COD toàn quốc</li>
+                                </ul>
+                            </div>
+                            <form action="" method="post" enctype="" class="form-vertical">
+                                <div class="qty-addcart clearfix">
+                                    <p class="quantity-selector">Số lượng</p>
+                                    <div class="qty">
+                                        <button type="button" class="icon-fallback icon-fallback-minus">
+                                            <span class="icon icon-minus" aria-hidden="true"></span>
+                                            <span class="fallback-text" aria-hidden="true">−</span>
+                                            <span class="visually-hidden">Giảm số lượng sản phẩm đi 1</span>
+                                        </button>
+                                        <input type="text" class="qty-num" name="quantity">
+                                        <button type="button" class="icon-fallback icon-fallback-plus">
+                                            <span class="icon icon-plus" aria-hidden="true"></span>
+                                            <span class="fallback-text" aria-hidden="true">+</span>
+                                            <span class="visually-hidden">Tăng số lượng sản phẩm lên 1</span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="btn-product-page">
+                                    <button type="submit" name="add" class="btn btn-add-product">Thêm vào giỏ
+                                        hàng</button>
+                                    <button name="buy" id="buy-now" class="btn btn-add-product">Mua ngay</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row product-single-desc">
+                    <div class="col-12 col-md-12 col-lg-8">
+                        <div class="product-tabs">
+                            <div class="tab clearfix">
+                                <button class="pro-tablinks active" onclick="openProTabs(event, 'protab1')" id="defaultOpenProTabs">Mô tả chi tiết</button>
+                                <button class="pro-tablinks" onclick="openProTabs(event, 'protab2')">Hướng dẫn sử
+                                    dụng</button>
+                                <button class="pro-tablinks" onclick="openProTabs(event, 'protab3')">Đánh giá</button>
+                                <button class="pro-tablinks" onclick="openProTabs(event, 'proCom')">Bình luận</button>
+
+                            </div>
+                            <div id="protab1" class="pro-tabcontent" style="display: block;">
+                                <p>Truyền thuyết dân gian xứ Kim Chi kể lại rằng, người phụ nữ xứ sở này từ ngàn xưa luôn mang vẻ đẹp “làn da sáng như sao trời, mịn màng tựa ngọc trai”. Đó là nguồn cảm hứng cho THEFACESHOP nghiên cứu và phát triển dòng sản
+                                    phẩm từ thảo dược truyền thống YEHWADAM.
+                                </p>
+                                <p><strong>Thành phần chính</strong></p>
+                                <p>Vẫn chiết xuất từ thảo mộc cao quý nhưng công thức được cải tiến vượt bậc, tăng tính hiệu quả của sự kết hợp giữa các thành phần thảo mộc lại với nhau: thành phần gồm các loại hạt giống, rễ cây, hoa và các loại trái cây
+                                    thiên nhiên tại Hàn Quốc, dồi dào dưỡng chất giúp nuôi dưỡng sâu, cải thiện nếp nhăn và các dấu hiệu lão hoá, mang lại làn da khoẻ mạnh và tươi trẻ.</p>
+                                <p><strong>Bộ sản phẩm gồm</strong></p>
+                                <p>Nước Cân Bằng Sáng Mịn Da YEHWADAM REVITALIZING TONER (155 ml + 32ml)</p>
+                                <p><strong>Công dụng</strong></p>
+                                <p>Sau khi rửa mặt thì làn da thường có cảm giác hơi khô căng, khó chịu do độ pH đang bị mất cân bằng. Vì thế, việc cân bằng lại độ pH là rất quan trọng giúp làn da phục hồi lại độ ẩm đã bị mất đi trong quá trình rửa mặt.</p>
+                                <p>Ngoài ra, nước cân bằng YEHWADAM REVITALIZING TONER sẽ giúp làm săn mịn lỗ chân lông, phục hồi độ ẩm và tăng khả năng hấp thụ sản phẩm dưỡng sâu hơn vào da. Bên cạnh đó, công thức đặc biệt giúp mang đến hiệu quả tăng cường
+                                    sinh khí, dưỡng sáng mịn da và chăm sóc sớm vấn đề lão hóa da từ đó giúp phục hồi vẻ tươi sáng rạng rỡ và tăng cường dưỡng chất làm mềm da.</p>
+                                <p>Kết cấu sản phẩm nhẹ, thẩm thấu nhanh nên để lại cảm giác mềm mượt tuyệt vời trên làn da.
+                                </p>
+                                <p><strong>Thành phần</strong></p>
+                                <p>Thành phần thảo mộc truyền thống tự nhiên từ nhân sâm, hạt kỷ tử, hoa rum giúp chống lão hóa sớm, dưỡng sáng mịn da. Vẫn chiết xuất từ thảo mộc cao quý nhưng công thức được cải tiến vượt bậc, tăng tính hiệu quả của sự kết
+                                    hợp giữa các thành phần thảo mộc lại với nhau: thành phần gồm các loại hạt giống, rễ cây, hoa và các loại trái cây thiên nhiên tại Hàn Quốc, dồi dào dưỡng chất giúp nuôi dưỡng sâu, cải thiện nếp nhăn và các dấu hiệu
+                                    lão hoá, mang lại làn da khoẻ mạnh và tươi trẻ.</p>
+                            </div>
+                            <div id="protab2" class="pro-tabcontent" style="display: block;">
+
+                                <p><strong>Bộ sản phẩm gồm</strong></p>
+                                <p>Nước Cân Bằng Sáng Mịn Da YEHWADAM REVITALIZING TONER (155 ml + 32ml)</p>
+                                <p><strong>Công dụng</strong></p>
+
+                            </div>
+                            <div id="protab3" class="pro-tabcontent" style="display: block;">
+
+                                <p><strong>Thành phần chính</strong></p>
+
+                            </div>
+                            <div id="proCom" class="pro-tabcontent" style="display: block;">
+                                <p>Truyền thuyết dân gian xứ Kim Chi kể lại rằng, người phụ nữ xứ sở này từ ngàn xưa luôn mang vẻ đẹp “làn da sáng như sao trời, mịn màng tựa ngọc trai”. Đó là nguồn cảm hứng cho THEFACESHOP nghiên cứu và phát triển dòng sản
+                                    phẩm từ thảo dược truyền thống YEHWADAM.
+                                </p>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 sidebar sidebar-blog">
+                        <div class="collection-filter">
+                            <button class="accordion col-sb-trigger panel-sort">
+                                <span>Danh mục sản phẩm</span>
+                            </button>
+                            <div class="panel">
+                                <ul class="no-bullets clearfix">
+                                    <li>
+                                        <a href="#">Danh mục A</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Danh mục B</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Danh mục C</a>
+                                    </li>
+                                    <li>
+                                        <a href="#">Danh mục D</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="collection-filter">
+                            <button class="accordion col-sb-trigger panel-sort">
+                                <span>Bài viết nổi bật</span>
+                            </button>
+                            <div class="panel">
+                                <div class="list-post no-bullets clearfix">
+                                    <div class="item">
+                                        <div class="article-img">
+                                            <a href="#">
+                                                <img src="./images/tt411_thumb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="title">Cách chọn kem lót phù hợp loại da 2</a>
+                                            <div class="info">
+                                                <span>
+                                                    <i class="fa fa-calendar"></i> 05/08/2019
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-user"></i> Suplo Beauty
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="article-img">
+                                            <a href="#">
+                                                <img src="./images/tt411_thumb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="title">Cách chọn kem lót phù hợp loại da 2</a>
+                                            <div class="info">
+                                                <span>
+                                                    <i class="fa fa-calendar"></i> 05/08/2019
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-user"></i> Suplo Beauty
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="article-img">
+                                            <a href="#">
+                                                <img src="./images/tt411_thumb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="title">Cách chọn kem lót phù hợp loại da 2</a>
+                                            <div class="info">
+                                                <span>
+                                                    <i class="fa fa-calendar"></i> 05/08/2019
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-user"></i> Suplo Beauty
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="article-img">
+                                            <a href="#">
+                                                <img src="./images/tt411_thumb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="title">Cách chọn kem lót phù hợp loại da 2</a>
+                                            <div class="info">
+                                                <span>
+                                                    <i class="fa fa-calendar"></i> 05/08/2019
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-user"></i> Suplo Beauty
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="article-img">
+                                            <a href="#">
+                                                <img src="./images/tt411_thumb.jpg">
+                                            </a>
+                                        </div>
+                                        <div class="content">
+                                            <a href="#" class="title">Cách chọn kem lót phù hợp loại da 2</a>
+                                            <div class="info">
+                                                <span>
+                                                    <i class="fa fa-calendar"></i> 05/08/2019
+                                                </span>
+                                                <span>
+                                                    <i class="fa fa-user"></i> Suplo Beauty
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row product-list related-products">
+                    <div class="col-12">
+                        <div class="related-product-content">
+                            <div class="related-product-title">
+                                <h3>Related product</h3>
+                            </div>
+                            <div class="row product-list">
+                                <div class="col-12">
+                                    <div class="product-list-related">
+                                        <div class="product-item">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="./images/men watch/men11 (2).jpg" alt="product 1" class="img-thumbnail" />
+                                                </a>
+                                                <div class="product-overlay"></div>
+                                                <div class="product-actions text-center clearfix">
+                                                    <div class="product-actions-inner">
+                                                        <div>
+                                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                            </button>
+                                                        </div>
+
+                                                        <div>
+                                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div>
+                                                            <button type="button" class="btnBuyNow buy-now">
+                                                                <span>Mua ngay</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-info text-center">
+                                                <div class="product-title">
+                                                    <a href="#">Aromatica Sea Daffodil Powder</a>
+                                                </div>
+                                                <div class="product-price clearfix">
+                                                    <span class="current-price">326,000₫</span>
+                                                    <span class="original-price"><s>396,000₫</s></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="./images/men watch/men11 (2).jpg" alt="product 1" class="img-thumbnail" />
+                                                </a>
+                                                <div class="product-overlay"></div>
+                                                <div class="product-actions text-center clearfix">
+                                                    <div class="product-actions-inner">
+                                                        <div>
+                                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                            </button>
+                                                        </div>
+
+                                                        <div>
+                                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div>
+                                                            <button type="button" class="btnBuyNow buy-now">
+                                                                <span>Mua ngay</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-info text-center">
+                                                <div class="product-title">
+                                                    <a href="#">Aromatica Sea Daffodil Powder</a>
+                                                </div>
+                                                <div class="product-price clearfix">
+                                                    <span class="current-price">326,000₫</span>
+                                                    <span class="original-price"><s>396,000₫</s></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="./images/men watch/men11 (2).jpg" alt="product 1" class="img-thumbnail" />
+                                                </a>
+                                                <div class="product-overlay"></div>
+                                                <div class="product-actions text-center clearfix">
+                                                    <div class="product-actions-inner">
+                                                        <div>
+                                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                            </button>
+                                                        </div>
+
+                                                        <div>
+                                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div>
+                                                            <button type="button" class="btnBuyNow buy-now">
+                                                                <span>Mua ngay</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-info text-center">
+                                                <div class="product-title">
+                                                    <a href="#">Aromatica Sea Daffodil Powder</a>
+                                                </div>
+                                                <div class="product-price clearfix">
+                                                    <span class="current-price">326,000₫</span>
+                                                    <span class="original-price"><s>396,000₫</s></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="product-item">
+                                            <div class="product-image">
+                                                <a href="#">
+                                                    <img src="./images/men watch/men11 (2).jpg" alt="product 1" class="img-thumbnail" />
+                                                </a>
+                                                <div class="product-overlay"></div>
+                                                <div class="product-actions text-center clearfix">
+                                                    <div class="product-actions-inner">
+                                                        <div>
+                                                            <button type="button" class="btnAddToCart add-to-cart">
+                                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                            </button>
+                                                        </div>
+
+                                                        <div>
+                                                            <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                            </button>
+                                                        </div>
+                                                        <div>
+                                                            <button type="button" class="btnBuyNow buy-now">
+                                                                <span>Mua ngay</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="product-info text-center">
+                                                <div class="product-title">
+                                                    <a href="#">Aromatica Sea Daffodil Powder</a>
+                                                </div>
+                                                <div class="product-price clearfix">
+                                                    <span class="current-price">326,000₫</span>
+                                                    <span class="original-price"><s>396,000₫</s></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+
+        <!-- Footer Links -->
+        <div class="container">
+
+            <!-- Grid row -->
+            <div class="row footer-top">
+
+                <!-- Grid column -->
+                <div class="col-12 col-md-4 menu-footer-one">
+
+                    <!-- Content -->
+                    <h5 class="logo-footer">The king of watches</h5>
+                    <ul class="footer-list">
+                        <li>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <p>Address :Số 1 Lương Yên, Q.Hai Bà Trưng, Hà Nội</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <p>
+                                Phone :
+                                <a href="tel:(+84)934 323 882">(+84)934 323 882</a>
+                            </p>
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p>
+                                Email :
+                                <a href="mailto: teamcuchuoi@gmail.com">Teamcuchuoi@gmail.com</a>
+                            </p>
+                        </li>
+                        <li class="group-btn-sub">
+                            <a href="">
+                                <img src="./images/brand-copy/blue.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="./images/brand-copy/ddk.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-12 col-md-3 menu-footer">
+
+                    <!-- Links -->
+                    <h5 class="title-menu-link">Customer Service</h5>
+
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">Giám định đồng hồ</a>
+                        </li>
+                        <li>
+                            <a href="#">Sửa chữa đồng hồ</a>
+                        </li>
+                        <li>
+                            <a href="#">Bảng giá dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="#">Nhận Catalogue</a>
+                        </li>
+                        <li>
+                            <a href="#">Câu hỏi thường gặp</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-12 col-md-2 menu-footer">
+                    <!-- Links -->
+                    <h5 class="title-menu-link">Dòng sản phẩm</h5>
+                    <ul class="footer-list" ">
+                        <li>
+                            <a href="# ">Omega</a>
+                        </li>
+                        <li>
+                            <a href="# ">Rolex</a>
+                        </li>
+                        <li>
+                            <a href="# ">Casio</a>
+                        </li>
+                        <li>
+                            <a href="# ">Apple-Watch</a>
+                        </li>
+                        <li>
+                            <a href="# ">Bulova</a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none ">
+
+                <!-- Grid column -->
+                <div class="col-12 col-md-3 menu-footer-newsletter ">
+                    <!-- Links -->
+                    <h5 class="title-menu-link ">Đăng kí nhận bản tin</h5>
+                    <p class="desc-newsletter ">Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây.</p>
+                    <form accept-charset="UTF-8 " action=" " class="frm-newsletter " method="post ">
+                        <div class="input-group ">
+                            <input type="email " value=" " placeholder="Nhập email của bạn... "  id="Email " class="input-group-field ">
+                            <span class="input-group-btn ">
+                                <button type="submit " class="btn " name="subscribe " id="subscribe " value="GỬI ">Subscribe</button>
+                            </span>
+                        </div>
+                    </form>
+                </span>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+            <hr>
+            <div class="row footer-bottom ">
+                <div class="col-12 col-md-6 col-lg-6 ">
+                    <!-- Copyright -->
+                    <div class="footer-copyright ">
+                        <span>© 2020 Copyright:</span>
+                        <a href="# ">Team củ chuối</a>
+                    </div>
+                    <!-- Copyright -->
+                </div>
+                <div class="col-12 col-md-6 col-lg-6 ">
+                    <!-- Social buttons -->
+                    <ul class="social-list ">
+                        <li class="social-list-item ">
+                            <a class="btn-floating btn-facebook ">
+                                <i class="fa fa-facebook "></i>
+                            </a>
+                        </li>
+                        <li class="social-list-item ">
+                            <a class="btn-floating btn-instagram ">
+                                <i class="fa fa-instagram "></i>
+                            </a>
+                        </li>
+                        <li class="social-list-item ">
+                            <a class="btn-floating btn-youtube ">
+                                <i class="fa fa-youtube-play "></i>
+                            </a>
+                        </li>
+                        <li class="social-list-item ">
+                            <a class="btn-floating btn-twitter ">
+                                <i class="fa fa-twitter "></i>
+                            </a>
+                        </li>
+                        <li class="social-list-item ">
+                            <a class="btn-floating btn-dribbble ">
+                                <i class="fa fa-google-plus "></i>
+                            </a>
+                        </li>
+                    </ul>
+                    <!-- Social buttons -->
+                </div>
+            </div>
+        </div>
+        <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+
+
+    <script src="./js/jquery-1.9.1.min.js "></script>
+    <script src="./js/popper.min.js "></script>
+    <script src="./js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="./vender/slick/slick.min.js "></script>
+    <script type="text/javascript " src="./vender/owlcarousel/js/owl.carousel.min.js "></script>
+    <script type="text/javascript " src="vender/fancybox/js/jquery.easing.min.js "></script>
+    <script type="text/javascript " src="vender/fancybox/js/jquery.fancybox-plus.min.js "></script>
+    <script type="text/javascript " src="vender/fancybox/js/jquery.ez-plus.js "></script>
+    <script src="./js/custom.js "></script>
+</body>
+
+</html>

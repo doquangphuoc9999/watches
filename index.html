@@ -1,0 +1,1422 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link href="./css/font-awesome.min.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="./vender/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/slick/slick-theme.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/owlcarousel/css/default.owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/owlcarousel/css/owl.theme.css" />
+    <link rel="stylesheet" type="text/css" href="./vender/owlcarousel/css/owl.carousel.css" />
+    <link href="./css/style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <!--modal product quick view-->
+    <div class="modal fade modal-quick-view" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-12 col-md-7 col-lg-7 product-images">
+                                <div class="product-images">
+                                    <div id="zoom-gallery" class="gallery product-gallery">
+                                        <a class="item" href="#">
+                                            <img src="images/products/citizen02.jpg" />
+                                        </a>
+                                        <a class="item" href="#">
+                                            <img src="./images/products/citizen02.jpg" />
+                                        </a>
+                                        <a class="item" href="#">
+                                            <img src="./images/products/citizen02.jpg" />
+                                        </a>
+                                        <a class="item" href="#">
+                                            <img src="./images/products/citizen02.jpg" />
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 col-lg-5 product-info">
+                                <h4 class="prpduct-title">Aromatica Sea Daffodil Aqua Gel Cream</h4>
+                                <p class="product-more-info">
+                                    <span class="product-sku">
+                                    Mã sản phẩm: <span>6KS15S0022</span>
+                                    </span>
+                                </p>
+                                <div class="form-input product-price-wrapper">
+                                    <div class="product-price">
+                                        <span class="p-price ">396,000₫</span>
+                                        <del>450,000₫</del>
+                                    </div>
+                                    <em class="PriceSaving">(Bạn đã tích kiệm được 54,000₫)</em>
+                                </div>
+                                <form action="" method="post" enctype="" class="form-vertical">
+                                    <div class="qty-addcart clearfix">
+                                        <p class="quantity-selector">Số lượng</p>
+                                        <div class="qty">
+                                            <button type="button" class="icon-fallback icon-fallback-minus">
+                                            <span class="icon icon-minus" aria-hidden="true"></span>
+                                            <span class="fallback-text" aria-hidden="true">−</span>
+                                            <span class="visually-hidden">Giảm số lượng sản phẩm đi 1</span>
+                                        </button>
+                                            <input type="text" class="qty-num" name="quantity">
+                                            <button type="button" class="icon-fallback icon-fallback-plus">
+                                            <span class="icon icon-plus" aria-hidden="true"></span>
+                                            <span class="fallback-text" aria-hidden="true">+</span>
+                                            <span class="visually-hidden">Tăng số lượng sản phẩm lên 1</span>
+                                        </button>
+                                        </div>
+                                    </div>
+                                    <div class="btn-product-page">
+                                        <button type="submit" name="add" class="btn btn-add-product">Thêm vào
+                                        giỏ</button>
+                                        <button name="buy" id="buy-now" class="btn btn-add-product">Mua ngay</button>
+                                    </div>
+                                </form>
+
+                                <div class="qv-readmore">
+                                    <span> hoặc </span><a class="read-more" href="#" role="button">Xem chi tiết</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="header-top">
+            <div class="container">
+                <div class="row top-header">
+                    <div class="col-12 col-md-12 col-lg-6">
+                        <div class="header-top-contact">
+                            <a href="#">
+                                <i class="fa fa-phone" aria-hidden="true"></i> (+84) 379494687
+                            </a>
+                            <span class="font-line">|</span>
+                            <a href="#">
+                                <i class="fa fa-envelope" aria-hidden="true"></i> doquangphuoc9999@gmail.com
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12  col-md-12 col-lg-6">
+                        <div class="header-top-account">
+                            <a href="#">
+                                <i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
+                                <span>Cart</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="hear-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-3 logo-top">
+                        <span>The king of watches</span>
+                    </div>
+                    <div class="col-sm-6 col-md-6 col-lg-9">
+                        <div class="menu-top">
+                            <nav class="navbar navbar-expand-lg navbar-light ">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                      <span class="navbar-toggler-icon"></span>
+                                    </button>
+
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                    <ul class="navbar-nav ml-auto">
+                                        <li class="nav-item active">
+                                            <a class="nav-link" href="./index.html">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#">Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <ul class="no-bullets megamenu-menu">
+                                                <li class="nav-item clearfix">
+                                                    <a class="nav-link" href="./men.html">Men</a>
+                                                </li>
+                                                <li class="nav-item clearfix">
+                                                    <a class="nav-link" href="./wonmen.html">Women</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./about.html">About us</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./news.html">News</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="./contact.html">Contact us</a>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main-silder">
+            <div id="home-main-silder">
+                <div class="item">
+                    <img src="./images/slide/slide1.jpg" />
+                    <div class="content">
+                        <h1>Speedmaster Professional</h1>
+                        <p>
+                            The OMEGA Speedmaster Professional Moonwatch is one of OMEGA's most iconic timepieces. Having been a part of all six lunar missons, the legendary Speedmaster is an impressive representation of the brand's adventurous <span>pioneering spirit</span>
+                        </p>
+                        <div class="btnlink">
+                            <a href="#">Discover the watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/slide/slide2.jpg" />
+                    <div class="content">
+                        <h1>Speedmaster Professional</h1>
+                        <p>
+                            The OMEGA Speedmaster Professional Moonwatch is one of OMEGA's most iconic timepieces. Having been a part of all six lunar missons, the legendary Speedmaster is an impressive representation of the brand's adventurous <span>pioneering spirit</span>
+                        </p>
+                        <div class="btnlink">
+                            <a href="#">Discover the watch</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="./images/slide/slider5.jpg" />
+                    <div class="content">
+                        <h1>Speedmaster Professional</h1>
+                        <p>
+                            The OMEGA Speedmaster Professional Moonwatch is one of OMEGA's most iconic timepieces. Having been a part of all six lunar missons, the legendary Speedmaster is an impressive representation of the brand's adventurous <span>pioneering spirit</span>
+                        </p>
+                        <div class="btnlink">
+                            <a href="#">Discover the watch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-featured-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 section-title">
+                        <h3 class="title-type">Welcome</h3>
+                        <h2>to Store Quang Phuoc</h2>
+                        <div class="line-bottom-title">
+                            <span class="line-left"></span>
+                            <img src="images/icon/icon-title.png">
+                            <span class="line-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row conten-product">
+                    <h3 class="descript-body text-center">
+                        Với mục tiêu cung cấp những sản phẩm có chất lượng cao và kiểu cách theo tiêu chuẩn quốc tế, người mua hàng có thể cảm nhận được sự chuyển động của máy đồng hồ qua từng vòng lên dây.
+                    </h3>
+                </div>
+                <div class="col-sm-12 col-md-12 col-lg-12 home-brand-slider">
+                    <div id="home-brand-slider">
+                        <div class="item">
+                            <div class="item-image">
+                                <a href="#">
+                                    CITIZEN
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-image">
+                                <a href="#">
+                                    OMEGA
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-image">
+                                <a href="#">
+                                    ROLEX
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-image">
+                                <a href="#">
+                                    FOSSIL
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-image">
+                                <a href="#">
+                                    SHOCK
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-image">
+                                <a href="#">
+                                    ICE
+                                </a>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-image">
+                                <a href="#">
+                                    CASIO
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <section class="home-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 section-title">
+                        <h3 class="title-type">Produts</h3>
+                        <h2>Hot Items </h2>
+                        <div class="line-bottom-title">
+                            <span class="line-left"></span>
+                            <img src="images/icon/icon-title.png">
+                            <span class="line-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="section-tab text-center">
+                            <div class="tab nav nav-tabs nav-fill" id="nav-tab" role="tablist">
+                                <button class="tablinks active" data-toggle="tab" href="#tabs1" role="tab" aria-controls="tabs1" aria-selected="true">Watch-Men</button>
+                                <button class="tablinks" data-toggle="tab" href="#tabs2" role="tab" aria-controls="tabs2" aria-selected="false">Watch-women</button>
+                                <button class="tablinks" data-toggle="tab" href="#tabs3" role="tab" aria-controls="tabs33" aria-selected="false">Casio</button>
+                                <button class="tablinks" data-toggle="tab" href="#tabs4" role="tab" aria-controls="tabs4" aria-selected="false">Apple-watch</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="tabs1" role="tabpanel" aria-labelledby="nav-tabs1-tab">
+                        <div class="row product-list ">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                                <div class="product-image">
+                                    <a href="./product-detail.html">
+                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                    </a>
+                                    <div class="product-overlay"></div>
+                                    <div class="product-actions text-center clearfix">
+                                        <div class="product-actions-inner">
+                                            <div>
+                                                <button type="button" class="btnAddToCart add-to-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                </button>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btnBuyNow buy-now">
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <div class="product-title">
+                                        <a href="./product-detail.html">Aromatica Sea Daffodil Powder</a>
+                                    </div>
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">326,000₫</span>
+                                        <span class="original-price"><s>396,000₫</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabs2" role="tabpanel" aria-labelledby="nav-tabs2-tab">
+                        <div class="row product-list">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                    </a>
+                                    <div class="product-overlay"></div>
+                                    <div class="product-actions text-center clearfix">
+                                        <div class="product-actions-inner">
+                                            <div>
+                                                <button type="button" class="btnAddToCart add-to-cart">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                            </button>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btnBuyNow buy-now">
+                                                <span>Mua ngay</span>
+                                            </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <div class="product-title">
+                                        <a href="#">Aromatica Sea Daffodil Powder</a>
+                                    </div>
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">326,000₫</span>
+                                        <span class="original-price"><s>396,000₫</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                    </a>
+                                    <div class="product-overlay"></div>
+                                    <div class="product-actions text-center clearfix">
+                                        <div class="product-actions-inner">
+                                            <div>
+                                                <button type="button" class="btnAddToCart add-to-cart">
+                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                            </button>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                            </button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btnBuyNow buy-now">
+                                                <span>Mua ngay</span>
+                                            </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <div class="product-title">
+                                        <a href="#">Aromatica Sea Daffodil Powder</a>
+                                    </div>
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">326,000₫</span>
+                                        <span class="original-price"><s>396,000₫</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabs3" role="tabpanel" aria-labelledby="nav-tabs3-tab">
+                        <div class="row product-list">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                    </a>
+                                    <div class="product-overlay"></div>
+                                    <div class="product-actions text-center clearfix">
+                                        <div class="product-actions-inner">
+                                            <div>
+                                                <button type="button" class="btnAddToCart add-to-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                </button>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btnBuyNow buy-now">
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <div class="product-title">
+                                        <a href="#">Aromatica Sea Daffodil Powder</a>
+                                    </div>
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">326,000₫</span>
+                                        <span class="original-price"><s>396,000₫</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                    </a>
+                                    <div class="product-overlay"></div>
+                                    <div class="product-actions text-center clearfix">
+                                        <div class="product-actions-inner">
+                                            <div>
+                                                <button type="button" class="btnAddToCart add-to-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                </button>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btnBuyNow buy-now">
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <div class="product-title">
+                                        <a href="#">Aromatica Sea Daffodil Powder</a>
+                                    </div>
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">326,000₫</span>
+                                        <span class="original-price"><s>396,000₫</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                    </a>
+                                    <div class="product-overlay"></div>
+                                    <div class="product-actions text-center clearfix">
+                                        <div class="product-actions-inner">
+                                            <div>
+                                                <button type="button" class="btnAddToCart add-to-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                </button>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btnBuyNow buy-now">
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <div class="product-title">
+                                        <a href="#">Aromatica Sea Daffodil Powder</a>
+                                    </div>
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">326,000₫</span>
+                                        <span class="original-price"><s>396,000₫</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="tabs4" role="tabpanel" aria-labelledby="nav-tabs4-tab">
+                        <div class="row product-list">
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                    </a>
+                                    <div class="product-overlay"></div>
+                                    <div class="product-actions text-center clearfix">
+                                        <div class="product-actions-inner">
+                                            <div>
+                                                <button type="button" class="btnAddToCart add-to-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                </button>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btnBuyNow buy-now">
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <div class="product-title">
+                                        <a href="#">Aromatica Sea Daffodil Powder</a>
+                                    </div>
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">326,000₫</span>
+                                        <span class="original-price"><s>396,000₫</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                    </a>
+                                    <div class="product-overlay"></div>
+                                    <div class="product-actions text-center clearfix">
+                                        <div class="product-actions-inner">
+                                            <div>
+                                                <button type="button" class="btnAddToCart add-to-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                </button>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btnBuyNow buy-now">
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <div class="product-title">
+                                        <a href="#">Aromatica Sea Daffodil Powder</a>
+                                    </div>
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">326,000₫</span>
+                                        <span class="original-price"><s>396,000₫</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                    </a>
+                                    <div class="product-overlay"></div>
+                                    <div class="product-actions text-center clearfix">
+                                        <div class="product-actions-inner">
+                                            <div>
+                                                <button type="button" class="btnAddToCart add-to-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                </button>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btnBuyNow buy-now">
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <div class="product-title">
+                                        <a href="#">Aromatica Sea Daffodil Powder</a>
+                                    </div>
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">326,000₫</span>
+                                        <span class="original-price"><s>396,000₫</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                                <div class="product-image">
+                                    <a href="#">
+                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                    </a>
+                                    <div class="product-overlay"></div>
+                                    <div class="product-actions text-center clearfix">
+                                        <div class="product-actions-inner">
+                                            <div>
+                                                <button type="button" class="btnAddToCart add-to-cart">
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                </button>
+                                            </div>
+
+                                            <div>
+                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
+                                            </div>
+                                            <div>
+                                                <button type="button" class="btnBuyNow buy-now">
+                                                    <span>Mua ngay</span>
+                                                </button>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="product-info text-center">
+                                    <div class="product-title">
+                                        <a href="#">Aromatica Sea Daffodil Powder</a>
+                                    </div>
+                                    <div class="product-price clearfix">
+                                        <span class="current-price">326,000₫</span>
+                                        <span class="original-price"><s>396,000₫</s></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="home-featured-products">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 section-title">
+                        <h3 class="title-type">Các ưu đãi</h3>
+                        <h2>Trong Hôm Nay</h2>
+                        <div class="line-bottom-title">
+                            <span class="line-left"></span>
+                            <img src="images/icon/icon-title.png">
+                            <span class="line-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row product-list">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="./product-detail.html">
+                                <img src="./images/men watch/men1.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btnBuyNow buy-now">
+                                            <span>Mua ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images/men watch/men2.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btnBuyNow buy-now">
+                                            <span>Mua ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images/men watch/men3.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="information" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy now</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images//men watch/men4.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btnBuyNow buy-now">
+                                            <span>Mua ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images/men watch/men5.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="information" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy now</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images/men watch/men6.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btnBuyNow buy-now">
+                                            <span>Mua ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images/men watch/img3.png" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="information" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy now</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images/men watch/men7.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btnBuyNow buy-now">
+                                            <span>Mua ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="information" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy now</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btnBuyNow buy-now">
+                                            <span>Mua ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="information" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy now</button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
+                        <div class="product-image">
+                            <a href="#">
+                                <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                            </a>
+                            <div class="product-overlay"></div>
+                            <div class="product-actions text-center clearfix">
+                                <div class="product-actions-inner">
+                                    <div>
+                                        <button type="button" class="btnAddToCart add-to-cart">
+                                            <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                        </button>
+                                    </div>
+
+                                    <div>
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                            <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button type="button" class="btnBuyNow buy-now">
+                                            <span>Mua ngay</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="product-info text-center">
+                            <div class="product-title">
+                                <a href="#">Aromatica Sea Daffodil Powder</a>
+                            </div>
+                            <div class="product-price clearfix">
+                                <span class="current-price">326,000₫</span>
+                                <span class="original-price"><s>396,000₫</s></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="home-policy">
+            <div class="container">
+                <div class="row">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-sm-12 col-md-12 col-lg-4 item aos-init">
+                        <div class="policy-item">
+                            <div class="icon-policy">
+                                <div class="icon">
+                                    <img src="./images/icon/policy_icon_1.png" alt="MIỄN PHÍ VẬN CHUYỂN">
+                                </div>
+                            </div>
+                            <div class="content-policy">
+                                <div class="title-police">MIỄN PHÍ VẬN CHUYỂN</div>
+                                <div class="descript-police">Nhận hàng trong vòng 3 ngày</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-sm-12 col-md-12 col-lg-4 item aos-init aos-animate">
+                        <div class="policy-item">
+                            <div class="icon-policy">
+                                <div class="icon">
+                                    <img src="./images/icon/policy_icon_2.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-policy">
+                                <div class="title-police">
+                                    CHẤT LƯỢNG ĐẢM BẢO
+                                </div>
+                                <div class="descript-police">
+                                    Top 10 thương hiệu uy tín 2019
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-sm-12 col-md-12 col-lg-4 item aos-init">
+                        <div class="policy-item">
+                            <div class="icon-policy">
+                                <div class="icon">
+                                    <img src="./images/icon/policy_icon_3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="content-policy">
+                                <div class="title-police">
+                                    HỖ TRỢ 24/7
+                                </div>
+                                <div class="descript-police">
+                                    Gọi điện - Zalo - iMessage - SMSx
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="page-footer">
+
+        <!-- Footer Links -->
+        <div class="container">
+
+            <!-- Grid row -->
+            <div class="row footer-top">
+
+                <!-- Grid column -->
+                <div class="col-12 col-md-4 menu-footer-one">
+
+                    <!-- Content -->
+                    <h5 class="logo-footer">The king of watches</h5>
+                    <ul class="footer-list">
+                        <li>
+                            <i class="fa fa-home" aria-hidden="true"></i>
+                            <p>Address :Số 1 Lương Yên, Q.Hai Bà Trưng, Hà Nội</p>
+                        </li>
+                        <li>
+                            <i class="fa fa-mobile" aria-hidden="true"></i>
+                            <p>
+                                Phone :
+                                <a href="tel:(+84)934 323 882">(+84)934 323 882</a>
+                            </p>
+                        </li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i>
+                            <p>
+                                Email :
+                                <a href="mailto: teamcuchuoi@gmail.com">Teamcuchuoi@gmail.com</a>
+                            </p>
+                        </li>
+                        <li class="group-btn-sub">
+                            <a href="">
+                                <img src="./images/brand-copy/blue.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="./images/brand-copy/ddk.jpg" alt="">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-12 col-md-3 menu-footer">
+
+                    <!-- Links -->
+                    <h5 class="title-menu-link">Customer Service</h5>
+
+                    <ul class="footer-list">
+                        <li>
+                            <a href="#">Giám định đồng hồ</a>
+                        </li>
+                        <li>
+                            <a href="#">Sửa chữa đồng hồ</a>
+                        </li>
+                        <li>
+                            <a href="#">Bảng giá dịch vụ</a>
+                        </li>
+                        <li>
+                            <a href="#">Nhận Catalogue</a>
+                        </li>
+                        <li>
+                            <a href="#">Câu hỏi thường gặp</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-12 col-md-2 menu-footer">
+                    <!-- Links -->
+                    <h5 class="title-menu-link">Dòng sản phẩm</h5>
+                    <ul class="footer-list" ">
+                    <li>
+                        <a href="# ">Omega</a>
+                    </li>
+                    <li>
+                        <a href="# ">Rolex</a>
+                    </li>
+                    <li>
+                        <a href="# ">Casio</a>
+                    </li>
+                    <li>
+                        <a href="# ">Apple-Watch</a>
+                    </li>
+                    <li>
+                        <a href="# ">Bulova</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Grid column -->
+            <hr class="clearfix w-100 d-md-none ">
+
+            <!-- Grid column -->
+            <div class="col-12 col-md-3 menu-footer-newsletter ">
+                <!-- Links -->
+                <h5 class="title-menu-link ">Đăng kí nhận bản tin</h5>
+                <p class="desc-newsletter ">Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây.</p>
+                <form accept-charset="UTF-8 " action=" " class="frm-newsletter " method="post ">
+                    <div class="input-group ">
+                        <input type="email " value=" " placeholder="Nhập email của bạn... "  id="Email " class="input-group-field ">
+                        <span class="input-group-btn ">
+                            <button type="submit " class="btn " name="subscribe " id="subscribe " value="GỬI ">Subscribe</button>
+                        </span>
+                    </div>
+                </form>
+            </span>
+
+            </div>
+            <!-- Grid column -->
+
+        </div>
+        <!-- Grid row -->
+        <hr>
+        <div class="row footer-bottom ">
+            <div class="col-12 col-md-6 col-lg-6 ">
+                <!-- Copyright -->
+                <div class="footer-copyright ">
+                    <span>© 2020 Copyright:</span>
+                    <a href="# ">Team củ chuối</a>
+                </div>
+                <!-- Copyright -->
+            </div>
+            <div class="col-12 col-md-6 col-lg-6 ">
+                <!-- Social buttons -->
+                <ul class="social-list ">
+                    <li class="social-list-item ">
+                        <a class="btn-floating btn-facebook ">
+                            <i class="fa fa-facebook "></i>
+                        </a>
+                    </li>
+                    <li class="social-list-item ">
+                        <a class="btn-floating btn-instagram ">
+                            <i class="fa fa-instagram "></i>
+                        </a>
+                    </li>
+                    <li class="social-list-item ">
+                        <a class="btn-floating btn-youtube ">
+                            <i class="fa fa-youtube-play "></i>
+                        </a>
+                    </li>
+                    <li class="social-list-item ">
+                        <a class="btn-floating btn-twitter ">
+                            <i class="fa fa-twitter "></i>
+                        </a>
+                    </li>
+                    <li class="social-list-item ">
+                        <a class="btn-floating btn-dribbble ">
+                            <i class="fa fa-google-plus "></i>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Social buttons -->
+            </div>
+        </div>
+    </div>
+    <!-- Footer Links -->
+    </footer>
+    <!-- Footer -->
+
+    <section id="back-to-top " class="back-to-top text-center ">
+        <i class="fa fa-angle-up " aria-hidden="true "></i>
+    </section>
+
+    <script src="./js/jquery-1.9.1.min.js "></script>
+    <script src="./js/popper.min.js "></script>
+    <script src="./js/bootstrap.min.js "></script>
+    <script type="text/javascript " src="./vender/slick/slick.min.js "></script>
+    <script type="text/javascript " src="./vender/owlcarousel/js/owl.carousel.min.js "></script>
+    <script src="./js/custom.js "></script>
+</body>
+
+</html>
