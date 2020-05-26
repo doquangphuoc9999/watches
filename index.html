@@ -20,13 +20,14 @@
 <body>
 
     <!--modal product quick view-->
-    <div class="modal fade modal-quick-view" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal fade modal-quick-view" id="exampleModalCenter" tabindex="-1" role="dialog"
+        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
         <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
                     <div class="container-fluid">
@@ -54,7 +55,7 @@
                                 <h4 class="prpduct-title">Aromatica Sea Daffodil Aqua Gel Cream</h4>
                                 <p class="product-more-info">
                                     <span class="product-sku">
-                                    Mã sản phẩm: <span>6KS15S0022</span>
+                                        Mã sản phẩm: <span>6KS15S0022</span>
                                     </span>
                                 </p>
                                 <div class="form-input product-price-wrapper">
@@ -69,21 +70,21 @@
                                         <p class="quantity-selector">Số lượng</p>
                                         <div class="qty">
                                             <button type="button" class="icon-fallback icon-fallback-minus">
-                                            <span class="icon icon-minus" aria-hidden="true"></span>
-                                            <span class="fallback-text" aria-hidden="true">−</span>
-                                            <span class="visually-hidden">Giảm số lượng sản phẩm đi 1</span>
-                                        </button>
+                                                <span class="icon icon-minus" aria-hidden="true"></span>
+                                                <span class="fallback-text" aria-hidden="true">−</span>
+                                                <span class="visually-hidden">Giảm số lượng sản phẩm đi 1</span>
+                                            </button>
                                             <input type="text" class="qty-num" name="quantity">
                                             <button type="button" class="icon-fallback icon-fallback-plus">
-                                            <span class="icon icon-plus" aria-hidden="true"></span>
-                                            <span class="fallback-text" aria-hidden="true">+</span>
-                                            <span class="visually-hidden">Tăng số lượng sản phẩm lên 1</span>
-                                        </button>
+                                                <span class="icon icon-plus" aria-hidden="true"></span>
+                                                <span class="fallback-text" aria-hidden="true">+</span>
+                                                <span class="visually-hidden">Tăng số lượng sản phẩm lên 1</span>
+                                            </button>
                                         </div>
                                     </div>
                                     <div class="btn-product-page">
                                         <button type="submit" name="add" class="btn btn-add-product">Thêm vào
-                                        giỏ</button>
+                                            giỏ</button>
                                         <button name="buy" id="buy-now" class="btn btn-add-product">Mua ngay</button>
                                     </div>
                                 </form>
@@ -116,16 +117,68 @@
                         </div>
                     </div>
                     <div class="col-12  col-md-12 col-lg-6">
-                        <div class="header-top-account">
-                            <a href="#">
-                                <i class="fa fa-shopping-cart cart" aria-hidden="true"></i>
-                                <span>Cart</span>
+                        <div class="header-top-account desktop-cart-wrapper">
+                            <a href="javascript:void(0)" class="cart">
+                                <i class="fa fa-shopping-bag" aria-hidden="true"></i>
+                                <span class="hd-cart-count">3</span>
                             </a>
+                            <!-- begin giỏ hàng khi không có sản phẩm -->
+                                <!-- <div class="quickview-cart" style="display: none;">
+                                    <h3>
+                                        Giỏ hàng trống
+                                        <span class="btnCloseQVCart">
+                                            <i class="fa fa-times" aria-hidden="true"></i>
+                                        </span>
+                                    </h3>
+                                    <ul class="no-bullets no-product">
+                                        <li>Bạn chưa có sản phẩm nào trong giỏ hàng!</li>
+                                    </ul>
+                                </div> -->
+                                <!-- nd giỏ hàng khi không có sản phẩm -->
+
+                                <!-- begin giỏ hàng khi có sản phẩm -->
+                                <div class="quickview-cart" style="display: none;">
+                                    <div class="shopping-cart-header">
+                                        <i class="fa fa-shopping-cart cart-icon"></i><span class="badge">3</span>
+                                        <div class="shopping-cart-total">
+                                            <span class="lighter-text">Total:</span>
+                                            <span class="main-color-text">$2,229.97</span>
+                                        </div>
+                                    </div>
+                                    <ul class="shopping-cart-items">
+                                        <li class="clearfix">
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item1.jpg"
+                                                alt="item1" />
+                                            <span class="item-name">Sony DSC-RX100M III</span>
+                                            <span class="item-price">$849.99</span>
+                                            <span class="item-quantity">Quantity: 01</span>
+                                        </li>
+
+                                        <li class="clearfix">
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item2.jpg"
+                                                alt="item1" />
+                                            <span class="item-name">KS Automatic Mechanic...</span>
+                                            <span class="item-price">$1,249.99</span>
+                                            <span class="item-quantity">Quantity: 01</span>
+                                        </li>
+
+                                        <li class="clearfix">
+                                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/cart-item3.jpg"
+                                                alt="item1" />
+                                            <span class="item-name">Kindle, 6" Glare-Free To...</span>
+                                            <span class="item-price">$129.99</span>
+                                            <span class="item-quantity">Quantity: 01</span>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="btn-checkbox">Checkout</a>
+                                </div>
+                                <!-- end giỏ hàng khi có sản phẩm -->
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="hear-center">
             <div class="container">
                 <div class="row">
@@ -135,9 +188,11 @@
                     <div class="col-sm-6 col-md-6 col-lg-9">
                         <div class="menu-top">
                             <nav class="navbar navbar-expand-lg navbar-light ">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                                      <span class="navbar-toggler-icon"></span>
-                                    </button>
+                                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                    aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
 
                                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                     <ul class="navbar-nav ml-auto">
@@ -145,7 +200,8 @@
                                             <a class="nav-link" href="./index.html">Home</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+                                            <a class="nav-link" href="#">Products <i class="fa fa-angle-down"
+                                                    aria-hidden="true"></i></a>
                                             <ul class="no-bullets megamenu-menu">
                                                 <li class="nav-item clearfix">
                                                     <a class="nav-link" href="./men.html">Men</a>
@@ -184,7 +240,9 @@
                     <div class="content">
                         <h1>Speedmaster Professional</h1>
                         <p>
-                            The OMEGA Speedmaster Professional Moonwatch is one of OMEGA's most iconic timepieces. Having been a part of all six lunar missons, the legendary Speedmaster is an impressive representation of the brand's adventurous <span>pioneering spirit</span>
+                            The OMEGA Speedmaster Professional Moonwatch is one of OMEGA's most iconic timepieces.
+                            Having been a part of all six lunar missons, the legendary Speedmaster is an impressive
+                            representation of the brand's adventurous <span>pioneering spirit</span>
                         </p>
                         <div class="btnlink">
                             <a href="#">Discover the watch</a>
@@ -196,7 +254,9 @@
                     <div class="content">
                         <h1>Speedmaster Professional</h1>
                         <p>
-                            The OMEGA Speedmaster Professional Moonwatch is one of OMEGA's most iconic timepieces. Having been a part of all six lunar missons, the legendary Speedmaster is an impressive representation of the brand's adventurous <span>pioneering spirit</span>
+                            The OMEGA Speedmaster Professional Moonwatch is one of OMEGA's most iconic timepieces.
+                            Having been a part of all six lunar missons, the legendary Speedmaster is an impressive
+                            representation of the brand's adventurous <span>pioneering spirit</span>
                         </p>
                         <div class="btnlink">
                             <a href="#">Discover the watch</a>
@@ -208,7 +268,9 @@
                     <div class="content">
                         <h1>Speedmaster Professional</h1>
                         <p>
-                            The OMEGA Speedmaster Professional Moonwatch is one of OMEGA's most iconic timepieces. Having been a part of all six lunar missons, the legendary Speedmaster is an impressive representation of the brand's adventurous <span>pioneering spirit</span>
+                            The OMEGA Speedmaster Professional Moonwatch is one of OMEGA's most iconic timepieces.
+                            Having been a part of all six lunar missons, the legendary Speedmaster is an impressive
+                            representation of the brand's adventurous <span>pioneering spirit</span>
                         </p>
                         <div class="btnlink">
                             <a href="#">Discover the watch</a>
@@ -233,7 +295,8 @@
                 </div>
                 <div class="row conten-product">
                     <h3 class="descript-body text-center">
-                        Với mục tiêu cung cấp những sản phẩm có chất lượng cao và kiểu cách theo tiêu chuẩn quốc tế, người mua hàng có thể cảm nhận được sự chuyển động của máy đồng hồ qua từng vòng lên dây.
+                        Với mục tiêu cung cấp những sản phẩm có chất lượng cao và kiểu cách theo tiêu chuẩn quốc tế,
+                        người mua hàng có thể cảm nhận được sự chuyển động của máy đồng hồ qua từng vòng lên dây.
                     </h3>
                 </div>
                 <div class="col-sm-12 col-md-12 col-lg-12 home-brand-slider">
@@ -310,10 +373,14 @@
                     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                         <div class="section-tab text-center">
                             <div class="tab nav nav-tabs nav-fill" id="nav-tab" role="tablist">
-                                <button class="tablinks active" data-toggle="tab" href="#tabs1" role="tab" aria-controls="tabs1" aria-selected="true">Watch-Men</button>
-                                <button class="tablinks" data-toggle="tab" href="#tabs2" role="tab" aria-controls="tabs2" aria-selected="false">Watch-women</button>
-                                <button class="tablinks" data-toggle="tab" href="#tabs3" role="tab" aria-controls="tabs33" aria-selected="false">Casio</button>
-                                <button class="tablinks" data-toggle="tab" href="#tabs4" role="tab" aria-controls="tabs4" aria-selected="false">Apple-watch</button>
+                                <button class="tablinks active" data-toggle="tab" href="#tabs1" role="tab"
+                                    aria-controls="tabs1" aria-selected="true">Watch-Men</button>
+                                <button class="tablinks" data-toggle="tab" href="#tabs2" role="tab"
+                                    aria-controls="tabs2" aria-selected="false">Watch-women</button>
+                                <button class="tablinks" data-toggle="tab" href="#tabs3" role="tab"
+                                    aria-controls="tabs33" aria-selected="false">Casio</button>
+                                <button class="tablinks" data-toggle="tab" href="#tabs4" role="tab"
+                                    aria-controls="tabs4" aria-selected="false">Apple-watch</button>
                             </div>
                         </div>
                     </div>
@@ -325,7 +392,8 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                                 <div class="product-image">
                                     <a href="./product-detail.html">
-                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                        <img src="./images/products/citizen02.jpg" alt="product 1"
+                                            class="img-thumbnail" />
                                     </a>
                                     <div class="product-overlay"></div>
                                     <div class="product-actions text-center clearfix">
@@ -337,7 +405,8 @@
                                             </div>
 
                                             <div>
-                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <button type="button" class="btnQuickView quick-view"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
                                                     <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                 </button>
                                             </div>
@@ -367,26 +436,28 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                                 <div class="product-image">
                                     <a href="#">
-                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                        <img src="./images/products/citizen02.jpg" alt="product 1"
+                                            class="img-thumbnail" />
                                     </a>
                                     <div class="product-overlay"></div>
                                     <div class="product-actions text-center clearfix">
                                         <div class="product-actions-inner">
                                             <div>
                                                 <button type="button" class="btnAddToCart add-to-cart">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
-                                            </button>
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                </button>
                                             </div>
 
                                             <div>
-                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
-                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                            </button>
+                                                <button type="button" class="btnQuickView quick-view"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
                                             </div>
                                             <div>
                                                 <button type="button" class="btnBuyNow buy-now">
-                                                <span>Mua ngay</span>
-                                            </button>
+                                                    <span>Mua ngay</span>
+                                                </button>
                                             </div>
                                         </div>
 
@@ -405,26 +476,28 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                                 <div class="product-image">
                                     <a href="#">
-                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                        <img src="./images/products/citizen02.jpg" alt="product 1"
+                                            class="img-thumbnail" />
                                     </a>
                                     <div class="product-overlay"></div>
                                     <div class="product-actions text-center clearfix">
                                         <div class="product-actions-inner">
                                             <div>
                                                 <button type="button" class="btnAddToCart add-to-cart">
-                                                <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
-                                            </button>
+                                                    <i class="fa fa-cart-plus" aria-hidden="true"></i><span> </span>
+                                                </button>
                                             </div>
 
                                             <div>
-                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
-                                                <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                            </button>
+                                                <button type="button" class="btnQuickView quick-view"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
+                                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
+                                                </button>
                                             </div>
                                             <div>
                                                 <button type="button" class="btnBuyNow buy-now">
-                                                <span>Mua ngay</span>
-                                            </button>
+                                                    <span>Mua ngay</span>
+                                                </button>
                                             </div>
                                         </div>
 
@@ -447,7 +520,8 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                                 <div class="product-image">
                                     <a href="#">
-                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                        <img src="./images/products/citizen02.jpg" alt="product 1"
+                                            class="img-thumbnail" />
                                     </a>
                                     <div class="product-overlay"></div>
                                     <div class="product-actions text-center clearfix">
@@ -459,7 +533,8 @@
                                             </div>
 
                                             <div>
-                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <button type="button" class="btnQuickView quick-view"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
                                                     <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                 </button>
                                             </div>
@@ -485,7 +560,8 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                                 <div class="product-image">
                                     <a href="#">
-                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                        <img src="./images/products/citizen02.jpg" alt="product 1"
+                                            class="img-thumbnail" />
                                     </a>
                                     <div class="product-overlay"></div>
                                     <div class="product-actions text-center clearfix">
@@ -497,7 +573,8 @@
                                             </div>
 
                                             <div>
-                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <button type="button" class="btnQuickView quick-view"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
                                                     <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                 </button>
                                             </div>
@@ -523,7 +600,8 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                                 <div class="product-image">
                                     <a href="#">
-                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                        <img src="./images/products/citizen02.jpg" alt="product 1"
+                                            class="img-thumbnail" />
                                     </a>
                                     <div class="product-overlay"></div>
                                     <div class="product-actions text-center clearfix">
@@ -535,7 +613,8 @@
                                             </div>
 
                                             <div>
-                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <button type="button" class="btnQuickView quick-view"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
                                                     <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                 </button>
                                             </div>
@@ -565,7 +644,8 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                                 <div class="product-image">
                                     <a href="#">
-                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                        <img src="./images/products/citizen02.jpg" alt="product 1"
+                                            class="img-thumbnail" />
                                     </a>
                                     <div class="product-overlay"></div>
                                     <div class="product-actions text-center clearfix">
@@ -577,7 +657,8 @@
                                             </div>
 
                                             <div>
-                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <button type="button" class="btnQuickView quick-view"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
                                                     <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                 </button>
                                             </div>
@@ -603,7 +684,8 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                                 <div class="product-image">
                                     <a href="#">
-                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                        <img src="./images/products/citizen02.jpg" alt="product 1"
+                                            class="img-thumbnail" />
                                     </a>
                                     <div class="product-overlay"></div>
                                     <div class="product-actions text-center clearfix">
@@ -615,7 +697,8 @@
                                             </div>
 
                                             <div>
-                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <button type="button" class="btnQuickView quick-view"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
                                                     <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                 </button>
                                             </div>
@@ -641,7 +724,8 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                                 <div class="product-image">
                                     <a href="#">
-                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                        <img src="./images/products/citizen02.jpg" alt="product 1"
+                                            class="img-thumbnail" />
                                     </a>
                                     <div class="product-overlay"></div>
                                     <div class="product-actions text-center clearfix">
@@ -653,7 +737,8 @@
                                             </div>
 
                                             <div>
-                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <button type="button" class="btnQuickView quick-view"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
                                                     <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                 </button>
                                             </div>
@@ -679,7 +764,8 @@
                             <div class="col-12 col-sm-6 col-md-4 col-lg-3 product-item">
                                 <div class="product-image">
                                     <a href="#">
-                                        <img src="./images/products/citizen02.jpg" alt="product 1" class="img-thumbnail" />
+                                        <img src="./images/products/citizen02.jpg" alt="product 1"
+                                            class="img-thumbnail" />
                                     </a>
                                     <div class="product-overlay"></div>
                                     <div class="product-actions text-center clearfix">
@@ -691,7 +777,8 @@
                                             </div>
 
                                             <div>
-                                                <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                                <button type="button" class="btnQuickView quick-view"
+                                                    data-toggle="modal" data-target="#exampleModalCenter">
                                                     <i class="fa fa-search-plus" aria-hidden="true"></i>
                                                 </button>
                                             </div>
@@ -727,7 +814,6 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-lg-12 section-title">
                         <h3 class="title-type">Các ưu đãi</h3>
-                        <h2>Trong Hôm Nay</h2>
                         <div class="line-bottom-title">
                             <span class="line-left"></span>
                             <img src="images/icon/icon-title.png">
@@ -751,7 +837,8 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
@@ -789,7 +876,8 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
@@ -827,12 +915,13 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
                                     <div>
-                                        <button class="information" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy now</button>
+                                        <button type="button" class="btnBuyNow buy-now" >Buy now</button>
                                     </div>
                                 </div>
 
@@ -863,7 +952,8 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
@@ -901,12 +991,13 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
                                     <div>
-                                        <button class="information" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy now</button>
+                                        <button type="button" class="btnBuyNow buy-now" >Buy now</button>
                                     </div>
                                 </div>
 
@@ -937,7 +1028,8 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
@@ -975,12 +1067,13 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
                                     <div>
-                                        <button class="information" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy now</button>
+                                        <button type="button" class="btnBuyNow buy-now" >Buy now</button>
                                     </div>
                                 </div>
 
@@ -1011,7 +1104,8 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
@@ -1049,12 +1143,13 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
                                     <div>
-                                        <button class="information" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy now</button>
+                                        <button type="button" class="btnBuyNow buy-now" >Buy now</button>
                                     </div>
                                 </div>
 
@@ -1085,7 +1180,8 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
@@ -1123,12 +1219,13 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
                                     <div>
-                                        <button class="information" type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Buy now</button>
+                                        <button type="button" class="btnBuyNow buy-now" >Buy now</button>
                                     </div>
                                 </div>
 
@@ -1159,7 +1256,8 @@
                                     </div>
 
                                     <div>
-                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal" data-target="#exampleModalCenter">
+                                        <button type="button" class="btnQuickView quick-view" data-toggle="modal"
+                                            data-target="#exampleModalCenter">
                                             <i class="fa fa-search-plus" aria-hidden="true"></i>
                                         </button>
                                     </div>
@@ -1186,10 +1284,149 @@
             </div>
         </section>
 
+        <section  class="home-news">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 section-title">
+                        <h3 class="title-type">News</h3>
+                        <h2></h2>
+                        <div class="line-bottom-title">
+                            <span class="line-left"></span>
+                            <img src="images/icon/icon-title.png">
+                            <span class="line-right"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-lg-12 blog-content">
+                        <div class="blog-single-item">
+                            <div class="blog-single-slider">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 col-lg-4 item">
+                                        <div class="article-item">
+                                            <a href="#" class="article-img">
+                                                <img src="./images/slide/slider8.jpg" alt="How to edit the hands in a watch">
+                                            </a>
+                                            <a href="#" class="article-title">How to edit the hands in a watch</a>
+                                            <div class="article-desc">
+                                                One account of the origin of the word "watch" is that it came from the Old English word woecce which meant "watchman", because it was used by town watchmen to keep track of their shifts.
+                                            </div>
+                                            <div class="article-info">
+                                                <div class="article-date">
+                                                    <div class="time">
+                                                        15
+                                                    </div>
+                                                    <div>
+                                                        <span>Month 12</span>
+                                                        <span>Year 2001</span>
+                                                    </div>
+                                                </div>
+                                                <div class="article-cmt">
+                                                    <span>
+                                                        <i class="fa fa-user"> Suplo Beauty</i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-commenting-o" aria-hidden="true">
+                                                            0 Comment
+                                                        </i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-4 item">
+                                        <div class="article-item">
+                                            <a href="#" class="article-img">
+                                                <img src="./images/slide/slider8.jpg" alt="How to edit the hands in a watch">
+                                            </a>
+                                            <a href="#" class="article-title">How to edit the hands in a watch</a>
+                                            <div class="article-desc">
+                                                One account of the origin of the word "watch" is that it came from the Old English word woecce which meant "watchman", because it was used by town watchmen to keep track of their shifts.
+                                            </div>
+                                            <div class="article-info">
+                                                <div class="article-date">
+                                                    <div class="time">
+                                                        15
+                                                    </div>
+                                                    <div>
+                                                        <span>Month 12</span>
+                                                        <span>Year 2001</span>
+                                                    </div>
+                                                </div>
+                                                <div class="article-cmt">
+                                                    <span>
+                                                        <i class="fa fa-user"> Suplo Beauty</i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-commenting-o" aria-hidden="true">
+                                                            0 Comment
+                                                        </i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 col-lg-4 item">
+                                        <div class="article-item">
+                                            <a href="#" class="article-img">
+                                                <img src="./images/slide/slider8.jpg" alt="How to edit the hands in a watch">
+                                            </a>
+                                            <a href="#" class="article-title">How to edit the hands in a watch</a>
+                                            <div class="article-desc">
+                                                One account of the origin of the word "watch" is that it came from the Old English word woecce which meant "watchman", because it was used by town watchmen to keep track of their shifts.
+                                            </div>
+                                            <div class="article-info">
+                                                <div class="article-date">
+                                                    <div class="time">
+                                                        15
+                                                    </div>
+                                                    <div>
+                                                        <span>Month 12</span>
+                                                        <span>Year 2001</span>
+                                                    </div>
+                                                </div>
+                                                <div class="article-cmt">
+                                                    <span>
+                                                        <i class="fa fa-user"> Suplo Beauty</i>
+                                                    </span>
+                                                    <span>
+                                                        <i class="fa fa-commenting-o" aria-hidden="true">
+                                                            0 Comment
+                                                        </i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-single-item">
+                            <div class="section-title clearfix">
+                                <div class="title">
+                                    <h2>Original clock</h2>
+                                </div>
+                                <div class="viewmore">
+                                    <a href="#">See it all
+                                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                                    </a>
+                                </div>
+                                <div class="line"></div>
+                            </div>
+    
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+        </section>
+
         <section class="home-policy">
             <div class="container">
                 <div class="row">
-                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-sm-12 col-md-12 col-lg-4 item aos-init">
+                    <div data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        class="col-sm-12 col-md-12 col-lg-4 item aos-init">
                         <div class="policy-item">
                             <div class="icon-policy">
                                 <div class="icon">
@@ -1202,7 +1439,8 @@
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="col-sm-12 col-md-12 col-lg-4 item aos-init aos-animate">
+                    <div data-aos="fade-up" data-aos-anchor-placement="top-bottom"
+                        class="col-sm-12 col-md-12 col-lg-4 item aos-init aos-animate">
                         <div class="policy-item">
                             <div class="icon-policy">
                                 <div class="icon">
@@ -1219,7 +1457,8 @@
                             </div>
                         </div>
                     </div>
-                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine" class="col-sm-12 col-md-12 col-lg-4 item aos-init">
+                    <div data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine"
+                        class="col-sm-12 col-md-12 col-lg-4 item aos-init">
                         <div class="policy-item">
                             <div class="icon-policy">
                                 <div class="icon">
@@ -1321,35 +1560,36 @@
                     <h5 class="title-menu-link">Dòng sản phẩm</h5>
                     <ul class="footer-list" ">
                     <li>
-                        <a href="# ">Omega</a>
+                        <a href=" # ">Omega</a>
                     </li>
                     <li>
-                        <a href="# ">Rolex</a>
+                        <a href=" # ">Rolex</a>
                     </li>
                     <li>
-                        <a href="# ">Casio</a>
+                        <a href=" # ">Casio</a>
                     </li>
                     <li>
-                        <a href="# ">Apple-Watch</a>
+                        <a href=" # ">Apple-Watch</a>
                     </li>
                     <li>
-                        <a href="# ">Bulova</a>
+                        <a href=" # ">Bulova</a>
                     </li>
                 </ul>
             </div>
             <!-- Grid column -->
-            <hr class="clearfix w-100 d-md-none ">
+            <hr class=" clearfix w-100 d-md-none ">
 
             <!-- Grid column -->
-            <div class="col-12 col-md-3 menu-footer-newsletter ">
+            <div class=" col-12 col-md-3 menu-footer-newsletter ">
                 <!-- Links -->
-                <h5 class="title-menu-link ">Đăng kí nhận bản tin</h5>
-                <p class="desc-newsletter ">Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây.</p>
-                <form accept-charset="UTF-8 " action=" " class="frm-newsletter " method="post ">
-                    <div class="input-group ">
-                        <input type="email " value=" " placeholder="Nhập email của bạn... "  id="Email " class="input-group-field ">
-                        <span class="input-group-btn ">
-                            <button type="submit " class="btn " name="subscribe " id="subscribe " value="GỬI ">Subscribe</button>
+                <h5 class=" title-menu-link ">Đăng kí nhận bản tin</h5>
+                <p class=" desc-newsletter ">Mỗi tháng chúng tôi đều có những đợt giảm giá dịch vụ và sản phẩm nhằm chi ân khách hàng. Để có thể cập nhật kịp thời những đợt giảm giá này, vui lòng nhập địa chỉ email của bạn vào ô dưới đây.</p>
+                <form accept-charset=" UTF-8 " action=" " class=" frm-newsletter " method=" post ">
+                    <div class=" input-group ">
+                        <input type=" email " value=" " placeholder=" Nhập email của bạn... "  id=" Email " class="
+                        input-group-field ">
+                        <span class=" input-group-btn ">
+                            <button type=" submit " class=" btn " name=" subscribe " id=" subscribe " value=" GỬI ">Subscribe</button>
                         </span>
                     </div>
                 </form>
@@ -1361,41 +1601,41 @@
         </div>
         <!-- Grid row -->
         <hr>
-        <div class="row footer-bottom ">
-            <div class="col-12 col-md-6 col-lg-6 ">
+        <div class=" row footer-bottom ">
+            <div class=" col-12 col-md-6 col-lg-6 ">
                 <!-- Copyright -->
-                <div class="footer-copyright ">
+                <div class=" footer-copyright ">
                     <span>© 2020 Copyright:</span>
-                    <a href="# ">Team củ chuối</a>
+                    <a href=" # ">Team củ chuối</a>
                 </div>
                 <!-- Copyright -->
             </div>
-            <div class="col-12 col-md-6 col-lg-6 ">
+            <div class=" col-12 col-md-6 col-lg-6 ">
                 <!-- Social buttons -->
-                <ul class="social-list ">
-                    <li class="social-list-item ">
-                        <a class="btn-floating btn-facebook ">
-                            <i class="fa fa-facebook "></i>
+                <ul class=" social-list ">
+                    <li class=" social-list-item ">
+                        <a class=" btn-floating btn-facebook ">
+                            <i class=" fa fa-facebook "></i>
                         </a>
                     </li>
-                    <li class="social-list-item ">
-                        <a class="btn-floating btn-instagram ">
-                            <i class="fa fa-instagram "></i>
+                    <li class=" social-list-item ">
+                        <a class=" btn-floating btn-instagram ">
+                            <i class=" fa fa-instagram "></i>
                         </a>
                     </li>
-                    <li class="social-list-item ">
-                        <a class="btn-floating btn-youtube ">
-                            <i class="fa fa-youtube-play "></i>
+                    <li class=" social-list-item ">
+                        <a class=" btn-floating btn-youtube ">
+                            <i class=" fa fa-youtube-play "></i>
                         </a>
                     </li>
-                    <li class="social-list-item ">
-                        <a class="btn-floating btn-twitter ">
-                            <i class="fa fa-twitter "></i>
+                    <li class=" social-list-item ">
+                        <a class=" btn-floating btn-twitter ">
+                            <i class=" fa fa-twitter "></i>
                         </a>
                     </li>
-                    <li class="social-list-item ">
-                        <a class="btn-floating btn-dribbble ">
-                            <i class="fa fa-google-plus "></i>
+                    <li class=" social-list-item ">
+                        <a class=" btn-floating btn-dribbble ">
+                            <i class=" fa fa-google-plus "></i>
                         </a>
                     </li>
                 </ul>
@@ -1407,16 +1647,16 @@
     </footer>
     <!-- Footer -->
 
-    <section id="back-to-top " class="back-to-top text-center ">
-        <i class="fa fa-angle-up " aria-hidden="true "></i>
+    <section id="back-to-top" class="back-to-top text-center">
+        <i class=" fa fa-angle-up " aria-hidden=" true "></i>
     </section>
 
-    <script src="./js/jquery-1.9.1.min.js "></script>
-    <script src="./js/popper.min.js "></script>
-    <script src="./js/bootstrap.min.js "></script>
-    <script type="text/javascript " src="./vender/slick/slick.min.js "></script>
-    <script type="text/javascript " src="./vender/owlcarousel/js/owl.carousel.min.js "></script>
-    <script src="./js/custom.js "></script>
+    <script src=" ./js/jquery-1.9.1.min.js "></script>
+    <script src=" ./js/popper.min.js "></script>
+    <script src=" ./js/bootstrap.min.js "></script>
+    <script type=" text/javascript " src=" ./vender/slick/slick.min.js "></script>
+    <script type=" text/javascript " src=" ./vender/owlcarousel/js/owl.carousel.min.js "></script>
+    <script src=" ./js/custom.js "></script>
 </body>
 
 </html>

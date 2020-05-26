@@ -145,3 +145,37 @@ for (i = 0; i < acc.length; i++) {
 if ($(window).width() > 992) {
     $('.accordion.col-sb-trigger').trigger('click');
 }
+
+// show giỏ hàng
+$(function () {
+
+    var box1 = document.querySelector('.desktop-cart-wrapper .quickview-cart');
+
+	function show1() {
+		$(".cart-overlay1").addClass('open');	
+		box1.style.display = 'block';	
+	}
+
+	function hide1() {
+		$(".cart-overlay1").removeClass('open');	
+		box1.style.display = 'none';	
+	}
+
+	$(".desktop-cart-wrapper .btnCloseQVCart").click(function(){
+		hide1();
+	});
+
+	var outside1 = function(event) {
+		if (!box1.contains(event.target)) {
+			hide1();
+			this.removeEventListener(event.type, outside1);
+		}
+	}
+
+	document.querySelector('.desktop-cart-wrapper > a').addEventListener('click', function(event) {
+		event.preventDefault();
+		event.stopPropagation();
+		show1();
+		document.addEventListener('click', outside1);
+	});
+});
