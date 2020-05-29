@@ -625,6 +625,7 @@ iframe {
 .product-list .product-item .product-info .product-title a {
     display: block;
     color: #333;
+    font-family: fantasy;
 }
 
 .product-list .product-item .product-image .product-overlay {
