@@ -2050,7 +2050,9 @@ main {
     display: flex;
     align-items: center;
 }
-
+.blog-content .blog-single-slider .item .article-item .article-info .article-date  span{
+    font-size: small;
+}
 .blog-content .blog-single-slider .item .article-item .article-info .article-date .time {
     font-size: 36px;
     color: #b7b21b;
