@@ -4,7 +4,7 @@ $(document).ready(function() {
         fade: true,
         prevArrow: "<a href='#' class='slick-arrow slick-prev'></a>",
         nextArrow: "<a href='#' class='slick-arrow slick-next'></a>",
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 3000,
     });
     //quick view slide
