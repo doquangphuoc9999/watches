@@ -264,7 +264,7 @@ header .header-top a:first-child {
 .banner-top .banner-img .content h2 {
     font-size: 24px;
     font-weight: 800;
-    color: #fff;
+    color: #ea4040;
     padding: 0;
     margin: 0 0 5px 0;
     text-transform: uppercase;
@@ -273,19 +273,21 @@ header .header-top a:first-child {
 .banner-top .banner-img .content .breadcrumb-small a {
     display: inline-block;
     position: relative;
-    color: #fff;
+    color: #ea4040;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
+    font-family: fantasy;
 }
 
 .banner-top .banner-img .content .breadcrumb-small span {
     display: inline-block;
     position: relative;
-    color: #fff;
+    color: #ea4040;
     -webkit-transition: all .3s ease;
     -moz-transition: all .3s ease;
     transition: all .3s ease;
+    font-family: fantasy;
 }
 
 
