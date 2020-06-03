@@ -29,7 +29,7 @@ section.home-policy {
 /*star header top*/
 
 .header-top {
-    background-image: linear-gradient(to right, #666871, #ccb6ca);
+    background-image: linear-gradient(to right, #d4e10de6, #46bcf466);
     padding: 10px 0;
 }
 
@@ -235,7 +235,7 @@ header .header-top a:first-child {
 /*Start banner top*/
 
 .banner-top {
-    margin-top: 5px;
+    margin-top: -44px;
 }
 
 .banner-top .banner-img {
@@ -297,7 +297,7 @@ header .header-top a:first-child {
 /*Start main slider*/
 
 .main-silder {
-    margin-top: 5px;
+    margin-top: -44px;
     max-width: 100%;
     overflow: hidden;
     position: relative;
@@ -2008,7 +2008,7 @@ main {
     transition: all .3s ease;
 }
 
-.blog-content .blog-single-slider .item .article-item a {}
+
 
 .blog-content .blog-single-slider .item .article-item .article-img img {
     width: 100%;
