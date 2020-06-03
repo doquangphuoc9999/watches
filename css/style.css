@@ -1017,12 +1017,12 @@ footer {
 
 .page-footer .footer-top .footer-list li.group-btn-sub {
     text-align: center;
-    display: table;
     width: 100%;
 }
 
 .page-footer .footer-top .footer-list li.group-btn-sub a {
     display: table-cell;
+    width: 30%;
 }
 
 .page-footer .footer-top .footer-list li.group-btn-sub a img {
@@ -1592,7 +1592,9 @@ form {
 .product-single .product-page {
     padding-left: 40px;
 }
-
+.product-single .product-page .line-price .visually-hidden{
+    margin-left: 13px;
+}
 .product-single .product-single-photos img {
     max-width: 100%!important;
     height: inherit!important;
